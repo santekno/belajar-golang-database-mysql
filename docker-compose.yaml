@@ -1,0 +1,16 @@
+version: "3.2"
+services:
+  msqyl:
+    container_name: "database-mysql"
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: belajar-golang
+      MYSQL_ROOT_PASSWORD: belajargolang
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
