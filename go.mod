@@ -1,4 +1,4 @@
-module belajar-golang-database-mysql
+module learn-golang-database-mysql
 
 go 1.20
 
